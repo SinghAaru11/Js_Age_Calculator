@@ -1,0 +1,192 @@
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Body and HTML */
+html, body {
+    height: 100%; /* Ensure the html and body take the full height of the viewport */
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box {
+    text-align: center;
+    
+    background: linear-gradient(331.71deg, rgb(128 198 222 / 46%) 27.19%, #e49b60 97.43%);
+    border: 3px solid #d6e6ff;
+    box-shadow: 2px 2px 2px #4772a8;
+    padding: 10px;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 70%;
+
+    padding: 20px;
+}
+/* Age Calculator Title */
+.age-calculator {
+    font-family: 'Sen';
+    font-size: 35px;
+    color: #102695;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 35px;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure the container takes full width */
+    height: 180px;
+    background-image: url(./images/2148475340.jpg);
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background image */
+    margin: 10px 0;
+    flex-direction: row; /* Default to row */
+    color: #102695;
+}
+
+/* Input Field */
+.input-field {
+    text-align: center;
+    width: 177px;
+    height: 31px;
+    display: block;
+    margin-top: 15px;
+    font-size: 12px;
+    outline: none;
+    padding: 21px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+/* Submit Button */
+.submit-btn {
+    margin-top: 10px;
+    width: 117px;
+    height: 37px;
+    background-color: #58a1bf;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+/* Submit Button Hover Effect */
+:hover.submit-btn {
+    background-color: rgb(233 134 94);
+    width: 160px;
+    height: 50px;
+    transition: 400ms;
+    font-size: 20px;
+}
+
+/* Result */
+.result {
+    color: red;
+    font-size: 25px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and Larger Mobile Devices */
+@media (max-width: 768px) {
+    .main-box {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .age-calculator {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .form-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .input-field {
+        width: 80%;
+        height: 30px;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .submit-btn {
+        width: 120px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    :hover.submit-btn {
+        width: 140px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .result {
+        font-size: 22px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .main-box {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .age-calculator {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+    .form-container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .input-field {
+        width: 100%;
+        height: 25px;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .submit-btn {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    :hover.submit-btn {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .result {
+        font-size: 20px;
+    }
+}
